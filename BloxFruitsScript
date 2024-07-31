@@ -1,0 +1,19 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Name = "PopupGui"
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0.5, 0, 0.3, 0)
+textLabel.Position = UDim2.new(0.25, 0, 0.35, 0)
+textLabel.Text = "This was a hidden grabify link you dumbfuck ty for the passwords!"
+textLabel.TextSize = 30
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+textLabel.BackgroundTransparency = 0.5
+textLabel.Parent = gui
+
+
+wait(5)
+gui:Destroy()
